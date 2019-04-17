@@ -129,8 +129,10 @@ span {
 #nav a {
     display: block;
     color: var(--white);
-    padding: 0.35em 0;
-    font-size: 2.75em;
+    padding: 0.15em 0;
+    margin-bottom: 0.75em;
+    font-size: 1.5em;
+    text-decoration: none;
     font-weight: 700;
 }
 
@@ -185,7 +187,7 @@ span {
     background-color: var(--ipc-green);
     top: 0;
     bottom: 0;
-    right: -14rem;
+    left: -14rem;
     color: var(--ghostwhite);
     opacity: 0.95;
     -webkit-transition: all 0.3s ease-in;
@@ -200,16 +202,16 @@ span {
 
 /* Toggle class to open menu */
 #nav.menu-open {
-    -webkit-transform: translateX(-14rem);
-    -moz-transform: translateX(-14rem);
-    -ms-transform: translateX(-14rem);
-    transform: translateX(-14rem);
+    -webkit-transform: translateX(14rem);
+    -moz-transform: translateX(14rem);
+    -ms-transform: translateX(14rem);
+    transform: translateX(14rem);
     width: 100%;
 }
 
 @media (min-width: 940px) {
     #nav.menu-open {
-        width: 25%;
+        width: 15%;
     }
 }
 
@@ -228,7 +230,7 @@ span {
     display: block;
     position: absolute;
     top: 35px;
-    right: 25px;
+    left: 25px;
     z-index: 10;
     height: 24px;
 }
