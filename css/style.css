@@ -7,13 +7,12 @@
     --white: #fff;
     --grey: #C6C6C6;
     --black: #000;
-    
+
     --font-stack: Calibri, Arial, Helvetica, sans-serif;
 }
 
 html,
 body {
-    height: 100%;
     margin: 0;
     padding: 0;
 }
@@ -25,14 +24,14 @@ body {
 
 h1 {
     font-family: var(--font-stack);
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 700;
 }
 
 p,
 span {
     font-family: var(--font-stack);
-    font-size: 12px;
+    font-size: 0.75em;
     font-weight: 400;
 }
 
@@ -40,8 +39,7 @@ span {
 .header {
     color: var(--ipc-blue);
     text-align: center;
-    background-color: transparent;
-    padding: 20px 0 20px 0;
+    padding-top: 1.5em;
 }
 
 .header__logo img {
@@ -115,8 +113,8 @@ span {
 #nav a {
     display: block;
     color: var(--white);
-    padding: 0.15em 0;
-    margin-bottom: 0.75em;
+    padding: 0.25em 0;
+    margin-bottom: 1.25em;
     font-size: 1.5em;
     text-decoration: none;
     font-weight: 700;
@@ -181,7 +179,7 @@ span {
     -ms-transition: all 0.3s ease-in;
     transition: all 0.3s ease-in;
     z-index: 1;
-    padding: 72px 0;
+    padding: 6.25em 0;
     text-align: center;
 }
 
@@ -208,14 +206,13 @@ span {
     top: 35px;
     left: 25px;
     z-index: 10;
-    height: 24px;
+    height: 1.5em;
 }
 
 #menu {
     height: 4px;
     width: 1.5em;
     background-color: var(--ipc-green);
-    margin-top: 8px;
 }
 
 #menu:after,
@@ -263,15 +260,15 @@ span {
 
 .github-cards {
     display: grid;
-    grid-template-columns: .5fr .5fr;
+    grid-template-columns: 35% 35%;
+    grid-column-gap: 200px;
     justify-items: stretch;
     align-items: stretch;
-    margin-top: .25em;
+    margin-left: 200px;
 }
 
 .github-card {
     background-color: var(--white);
-    margin: 0 6.25em 4.75em;
     padding: 1.5em;
     border: 1px solid var(--ipc-green);
     -webkit-border-radius: 4px;
@@ -301,12 +298,16 @@ span {
 
 .github-card__screenshot {
     max-width: 100%;
-    margin-bottom: 1.5em;
+    height: auto;
+    /* border-radius */
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     -ms-border-radius: 4px;
     border-radius: 4px;
-    box-shadow: 0 2px 5px var(--ghostwhite);
+    /* box-shadow */
+    -webkit-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .github-card__meta {
@@ -338,8 +339,8 @@ span {
     font-size: 0.75em;
     text-align: center;
     color: var(--white);
-    width: 100%;
     position: fixed;
+    width: 100%;
     bottom: 0;
     left: 0;
     z-index: 999992;
