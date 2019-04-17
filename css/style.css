@@ -304,6 +304,11 @@ span {
     height: 150px;
 }
 
+.github-card:hover{
+    background-color: var(--ipc-green);
+    color: var(--ghostwhite);
+}
+
 .github-card>h3 {
     margin-top: 0;
     color: var(--ipc-blue);
