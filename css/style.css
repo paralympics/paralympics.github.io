@@ -256,6 +256,25 @@ span {
     background-color: var(--ghostwhite);
 }
 
+/* social */
+#nav .social {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+@media (min-width: 940px) {
+    #nav .social {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+#nav .social:hover {
+    background-color: transparent;
+    color: var(--ipc-blue);
+}
+
 /* repos */
 
 .github-cards {
