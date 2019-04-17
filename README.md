@@ -1,2 +1,3 @@
 # paralympics.github.io
-Open Source Portal Website
+
+Simple static website to showcase the open source projects that the International Paralympic Committee is working on.
